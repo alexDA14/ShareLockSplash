@@ -20,10 +20,7 @@
       <a href="#" class="active" onclick="toggleLanguage(event, 'en')">en</a><a href="#" onclick="toggleLanguage(event, 'pl')">pl</a>
     </div>
     <img src="./assets/images/sharelock-logo.svg" alt="ShareLock" class="logo-image">
-    <div class="soon-text">
-      <span class="lang-en">coming soon</span>
-      <span class="lang-pl">coming soon PL</span>
-    </div>
+    <div class="soon-text">coming soon</div>
     <div class="share-lock-title">
       <img src="./assets/images/shareLock.svg" alt="ShareLock">
     </div>
@@ -32,7 +29,7 @@
       <div class="learn-more">
         <a href="#">
           <span class="lang-en">Learn More About<br> ShareLock</span>
-          <span class="lang-pl">Learn More About<br> ShareLock PL</span>
+          <span class="lang-pl">Dowiedz się więcej na temat aplikacji<br> ShareLock</span>
         </a>
       </div>
       <div class="social-networks">
@@ -54,28 +51,26 @@
     <div class="subscription-box">
       <h1 class="slogan">
         <span class="lang-en">Do you want us to let you know when the Share<span class="blue-text">Lock</span> will be ready?</span>
-        <span class="lang-pl">Do you want us to let you know when the Share<span class="blue-text">Lock</span> will be ready? PL</span>
+        <span class="lang-pl">Chcesz poznać szczegóły dotyczące aplikacji Share<span class="blue-text">Lock</span>?</span>
       </h1>
       <h2 class="sub-slogan">
         <span class="lang-en">Please leave us your email address and we will inform you when ShareLock will be ready for you to test it. We promise not to spam you ;) * wing wing*</span>
-        <span class="lang-pl">Please leave us your email address and we will inform you when ShareLock will be ready for you to test it. We promise not to spam you ;) * wing wing* PL</span>
+        <span class="lang-pl">Powierz nam adres Twojego emaila, a my poinformujemy Cię, kiedy SHARELOCK będzie gotowy do testów.
+Obiecujmy nie spamować Twojej skrzynki * wing</span>
       </h2>
-      <form method="post" action="#">
+      <form method="post" name="subscribe-email" action="#">
         <label>
-          <input type="email" id="subscribe-input" class="email-input" placeholder="Email address" required>
+          <input type="email" id="subscribe-input" name="email" class="email-input" placeholder="Email address" required>
         </label>
         <button type="submit" class="action-button">
           <span class="lang-en">Save</span>
-          <span class="lang-pl">Save PL</span>
+          <span class="lang-pl">Zapisz się</span>
         </button>
       </form>
     </div>
   </div>
   <footer>
-    <div class="footer-container">
-      <span class="lang-en">Copyright 2019 Solvera &copy;. All rights Reserved</span>
-      <span class="lang-pl">Copyright 2019 Solvera &copy;. All rights Reserved PL</span>
-    </div>
+    <div class="footer-container">Copyright 2019 Solvera &copy;. All rights Reserved</div>
   </footer>
 </div>
 <script src="./main.js" type="application/javascript"></script>
