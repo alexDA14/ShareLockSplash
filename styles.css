@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #808988;
+  font-family: 'Montserrat', sans-serif;
+}
+body * { box-sizing: border-box; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+html[lang="en"] .lang-pl {
+  display: none;
+}
+html[lang="en"] .lang-en {
+  display: inline;
+}
+html[lang="pl"] .lang-pl {
+  display: inline;
+}
+html[lang="pl"] .lang-en {
+  display: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+.main-container {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px;
+  background-color: rgba(0, 0, 0, .4);
+  color: #FFFFFF;
+  text-align: center;
+}
+header a {
+  color: #FFFFFF;
+}
+header img.logo-image {
+  width: 112px;
+  opacity: .6;
+}
+.lang-switcher {
+  align-self: flex-end;
+  padding-bottom: 6px;
+}
+.lang-switcher a {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 6px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.lang-switcher a.active {
+  color: #3BC7FF;
+}
+.soon-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #3BC7FF;
+  letter-spacing: 30px;
+}
+.share-lock-title {
+  font-size: 120px;
+}
+.share-lock-title img {
+  vertical-align: top;
+}
+.date {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+.learn-more {
+  padding-bottom: 42px;
+}
+.social-networks a {
+  display: inline-block;
+  margin: 0 6px;
+}
+.social-networks a img {
+  width: 32px;
+  height: 32px;
+}
+.to-subscribe {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 24px;
+  padding-top: 24px;
+}
+.to-subscribe a:hover {
+  text-decoration: none;
+}
+.subscription-container {
+  background-color: #FFFFFF;
+  padding: 120px 0;
+}
+.subscription-box {
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscription-box h1.slogan {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0 0 24px 0;
+  color: #171D1C;
+  font-size: 24px;
+}
+.subscription-box h1.slogan span.blue-text {
+  color: #3BC7FF;
+}
+.subscription-box h2.sub-slogan {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0 0 36px 0;
+  font-size: 16px;
+  line-height: 28px;
+}
+form {
+  margin: 0;
+}
+form label {
+  display: block;
+  position: relative;
+}
+form label::before {
+  display: block;
+  content: "";
+  background-color: #E0E0E4;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  left: 42px;
+  top: 14px;
+}
+form input.email-input {
+  display: block;
+  border: 1px solid #E0E0E4;
+  line-height: 56px;
+  box-shadow: none;
+  border-radius: 5px;
+  color: #808988;
+  width: 100%;
+  padding: 0 0 0 48px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background: url("./assets/images/icn_email.png") no-repeat 15px 50%;
+  margin-bottom: 36px;
+}
+form button.action-button {
+  background-color: #3BC7FF;
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: none;
+  outline: none;
+  line-height: 40px;
+  padding: 0 36px;
+  margin: 0;
+  cursor: pointer;
+}
+footer {
+  background-color: #09131F;
+  padding: 24px 0;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+footer .footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1111px) {
+  .subscription-container, header, footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .subscription-box {
+    width: 100%;
+  }
+  .share-lock-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 555px) {
+  .soon-text {
+    font-size: 24px;
+    letter-spacing: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .soon-text {
+    font-size: 21px;
+    letter-spacing: 12px;
+  }
+  .date {
+    padding-bottom: 18px;
+  }
+  .learn-more {
+    padding-bottom: 30px;
+  }
+  .to-subscribe {
+    padding-top: 12px;
+  }
+}

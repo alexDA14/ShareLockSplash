@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShareLock Coming soon</title>
+  <meta name="description" content="ShareLock coming soon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="./assets/videos/bg-preview.mp4" type="video/mp4">
+</video>
+<div class="main-container">
+  <header>
+    <div class="lang-switcher">
+      <a href="#" class="active" onclick="toggleLanguage(event, 'en')">en</a><a href="#" onclick="toggleLanguage(event, 'pl')">pl</a>
+    </div>
+    <img src="./assets/images/sharelock-logo.svg" alt="ShareLock" class="logo-image">
+    <div class="soon-text">
+      <span class="lang-en">coming soon</span>
+      <span class="lang-pl">coming soon PL</span>
+    </div>
+    <div class="share-lock-title">
+      <img src="./assets/images/shareLock.svg" alt="ShareLock">
+    </div>
+    <div class="bottom-header">
+      <div class="date">18.03</div>
+      <div class="learn-more">
+        <a href="#">
+          <span class="lang-en">Learn More About<br> ShareLock</span>
+          <span class="lang-pl">Learn More About<br> ShareLock PL</span>
+        </a>
+      </div>
+      <div class="social-networks">
+        <a href="https://www.facebook.com/autorun.nearshore/" target="_blank">
+          <img src="./assets/images/fb.png" alt="FB">
+        </a>
+        <a href="https://www.linkedin.com/company/autorun/about/" target="_blank">
+          <img src="./assets/images/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+      <div class="to-subscribe">
+        <a href="#subscribe-input">
+          <img src="./assets/images/icn_arrow.svg" alt="⌄">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="subscription-container">
+    <div class="subscription-box">
+      <h1 class="slogan">
+        <span class="lang-en">Do you want us to let you know when the Share<span class="blue-text">Lock</span> will be ready?</span>
+        <span class="lang-pl">Do you want us to let you know when the Share<span class="blue-text">Lock</span> will be ready? PL</span>
+      </h1>
+      <h2 class="sub-slogan">
+        <span class="lang-en">Please leave us your email address and we will inform you when ShareLock will be ready for you to test it. We promise not to spam you ;) * wing wing*</span>
+        <span class="lang-pl">Please leave us your email address and we will inform you when ShareLock will be ready for you to test it. We promise not to spam you ;) * wing wing* PL</span>
+      </h2>
+      <form method="post" action="#">
+        <label>
+          <input type="email" id="subscribe-input" class="email-input" placeholder="Email address" required>
+        </label>
+        <button type="submit" class="action-button">
+          <span class="lang-en">Save</span>
+          <span class="lang-pl">Save PL</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <span class="lang-en">Copyright 2019 Solvera &copy;. All rights Reserved</span>
+      <span class="lang-pl">Copyright 2019 Solvera &copy;. All rights Reserved PL</span>
+    </div>
+  </footer>
+</div>
+<script src="./main.js" type="application/javascript"></script>
+</body>
+</html>
