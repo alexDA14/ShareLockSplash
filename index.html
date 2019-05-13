@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ShareLock Coming soon</title>
+  <title>Sharelock- Your rental keyless accessible!</title>
   <meta name="description" content="ShareLock coming soon">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="shareLockFavicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" type="text/css">
@@ -25,7 +25,6 @@
       <img src="./assets/images/shareLock.svg" alt="ShareLock">
     </div>
     <div class="bottom-header">
-      <div class="date">18.03</div>
       <div class="learn-more">
         <a href="#">
           <span class="lang-en">Learn More About<br> ShareLock</span>
@@ -36,7 +35,7 @@
         <a href="https://www.facebook.com/autorun.nearshore/" target="_blank">
           <img src="./assets/images/fb.png" alt="FB">
         </a>
-        <a href="https://www.linkedin.com/company/autorun/about/" target="_blank">
+        <a href=" https://www.linkedin.com/company/autorun-sp.-z-o.o./" target="_blank">
           <img src="./assets/images/linkedin.png" alt="LinkedIn">
         </a>
       </div>
@@ -58,7 +57,15 @@
         <span class="lang-pl">Powierz nam adres Twojego emaila, a my poinformujemy Cię, kiedy SHARELOCK będzie gotowy do testów.
 Obiecujmy nie spamować Twojej skrzynki * wing</span>
       </h2>
-      <form method="post" name="subscribe-email" action="#">
+      <form method="post" name="subscribe-email" id="subscribe-form">
+        <div class="success-text">
+          <span class="lang-en">We sent email to Your address. Please check spam folder, just in case :)</span>
+          <span class="lang-pl">We sent email to Your address. Please check spam folder, just in case :) PL</span>
+        </div>
+        <div class="error-text">
+          <span class="lang-en">Error happened. Please reload page and try one more time :(</span>
+          <span class="lang-pl">Error happened. Please reload page and try one more time :( PL</span>
+        </div>
         <label>
           <input type="email" id="subscribe-input" name="email" class="email-input" placeholder="Email address" required>
         </label>
@@ -70,7 +77,9 @@ Obiecujmy nie spamować Twojej skrzynki * wing</span>
     </div>
   </div>
   <footer>
-    <div class="footer-container">Copyright 2019 Autorun &copy;. All rights Reserved</div>
+    <div class="footer-container">
+      Copyright 2019 <a href="https://autorun.solutions" target="_blank"><img src="./assets/images/logo_autorun.png" alt="AutoRun Solutions"></a> &copy;. All rights Reserved
+    </div>
   </footer>
 </div>
 <script src="./main.js" type="application/javascript"></script>

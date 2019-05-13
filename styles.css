@@ -86,12 +86,8 @@ header img.logo-image {
 }
 .share-lock-title img {
   vertical-align: top;
-}
-.date {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  padding-bottom: 24px;
+  max-width: 880px;/* or remove this and next line, if Blazej decide to use prev version only with text */
+  width: 100%;
 }
 .learn-more {
   padding-bottom: 42px;
@@ -186,17 +182,41 @@ form button.action-button {
   margin: 0;
   cursor: pointer;
 }
+form .success-text,
+form .error-text{
+  margin: 6px 0 24px 0;
+  display: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+}
+form .success-text {
+  border: 1px solid #2ec100;
+  color: #2ec100;
+}
+form .error-text {
+  border: 1px solid #9b0500;
+  color: #9b0500;
+}
+form .success-text.show,
+form .error-text.show{
+  display: block;
+}
 footer {
   background-color: #09131F;
-  padding: 24px 0;
+  padding: 18px 0;
   color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
 footer .footer-container {
+  display: flex;
+  align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+}
+footer .footer-container a {
+  margin: 0 6px;
 }
 
 @media (max-width: 1111px) {
@@ -213,9 +233,15 @@ footer .footer-container {
 }
 
 @media (max-width: 555px) {
+  header img.logo-image {
+    width: 81px;
+  }
   .soon-text {
     font-size: 24px;
     letter-spacing: 18px;
+  }
+  footer .footer-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -227,9 +253,6 @@ footer .footer-container {
   .soon-text {
     font-size: 21px;
     letter-spacing: 12px;
-  }
-  .date {
-    padding-bottom: 18px;
   }
   .learn-more {
     padding-bottom: 30px;
