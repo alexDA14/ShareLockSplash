@@ -48,7 +48,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 36px;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5);
   color: #FFFFFF;
   text-align: center;
 }
@@ -80,6 +80,8 @@ header img.logo-image {
   font-size: 30px;
   color: #3BC7FF;
   letter-spacing: 30px;
+  position: relative;
+  top: 24px;
 }
 .share-lock-title {
   font-size: 120px;
