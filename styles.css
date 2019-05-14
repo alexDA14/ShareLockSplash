@@ -86,7 +86,7 @@ header img.logo-image {
 }
 .share-lock-title img {
   vertical-align: top;
-  max-width: 880px;/* or remove this and next line, if Blazej decide to use prev version only with text */
+  max-width: 880px;
   width: 100%;
 }
 .learn-more {

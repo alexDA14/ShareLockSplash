@@ -27,14 +27,6 @@ function formSubmit(event) {
       successEl.classList.add('show');
     }
   };
-
-  /*
-  ToDo: Ask Mateusz to make correct error handler on BE and then uncomment this code and remove condition from success response
-    request.onerror = function() {
-      let successEl = document.querySelector('.error-text');
-      successEl.classList.add('show');
-    };
-  */
   request.send(JSON.stringify({ email: event.target['0'].value }));
   event.preventDefault();
 }
